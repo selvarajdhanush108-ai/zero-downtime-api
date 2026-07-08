@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: zero-downtime-service
+
+spec:
+  selector:
+    app: zero-downtime-api
+    color: green
+
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+
+  type: NodePort
