@@ -21,7 +21,8 @@ spec:
     spec:
       containers:
       - name: zero-downtime-api
-        image: zero-downtime-api:v6
+        image: IMAGE_TAG
+        imagePullPolicy: Always
 
         ports:
         - containerPort: 8080

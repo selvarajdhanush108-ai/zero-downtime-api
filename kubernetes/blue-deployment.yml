@@ -21,7 +21,8 @@ spec:
     spec:
       containers:
       - name: zero-downtime-api
-        image: zero-downtime-api:v5
+        image: dhanushs2k5/zero-downtime-api:latest
+        imahePullPolicy: Always
 
         ports:
         - containerPort: 8080

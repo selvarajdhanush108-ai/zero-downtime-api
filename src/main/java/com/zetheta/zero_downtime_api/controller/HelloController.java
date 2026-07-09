@@ -33,6 +33,6 @@ public class HelloController {
     }
     @GetMapping("/selector")
     public String selector() {
-        return "Green";   
+        return "Blue";   
     }   
 }
